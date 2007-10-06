@@ -1,4 +1,5 @@
-package Win32;
+package # hide from PAUSE
+        Win32;
 
 sub AUTOLOAD {
     # save the value of these variables

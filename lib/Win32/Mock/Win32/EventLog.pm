@@ -1,4 +1,5 @@
-package Win32::EventLog;
+package # hide from PAUSE
+        Win32::EventLog;
 use strict;
 use Carp;
 require Exporter;

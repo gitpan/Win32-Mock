@@ -1,4 +1,5 @@
-package Win32::Console;
+package # hide from PAUSE
+        Win32::Console;
 
 sub new {}
 

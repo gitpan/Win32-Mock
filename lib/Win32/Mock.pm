@@ -1,14 +1,10 @@
 package Win32::Mock;
+$VERSION = '0.02';
 use strict;
 use File::Basename;
 use File::Spec::Functions;
 use Devel::FakeOSName "Win32/\u$^O";
-
-{
-    no strict 'vars';
-    $VERSION = '0.01';
-    unshift @INC, catdir(dirname($INC{"Win32/Mock.pm"}), "Mock");
-}
+use lib catdir(dirname($INC{"Win32/Mock.pm"}), "Mock");
 
 1
 
@@ -20,7 +16,7 @@ Win32::Mock - Mock Win32 modules
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =head1 SYNOPSIS
 

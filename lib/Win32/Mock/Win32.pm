@@ -1,4 +1,5 @@
-package Win32;
+package # hide from PAUSE
+        Win32;
 use strict;
 use Config;
 use File::Spec;
@@ -311,9 +312,9 @@ sub GetCurrentThreadId {
 # --------------
 sub GetFileVersion {
     if ($_[0] eq $^X) {
-        my @version = map {int} $] =~ /^([0-9]+)\.([0-9]{3})([0-9]{3})$/;
+        my @version = map {int} $] =~ /^([0-9]+)\.([0-9]{3})([0-9]+)$/;
         push @version, Win32::BuildNumber();
-        return wantarray ? @version : $]
+        return wantarray ? @version : join ".", @version
     }
     return wantarray ? (0,0,0,0) : "0.0.0.0"
 }

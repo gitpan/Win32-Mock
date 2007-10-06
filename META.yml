@@ -1,6 +1,6 @@
 ---
 name: Win32-Mock
-version: 0.01
+version: 0.02
 author:
   - 'Sébastien Aperghis-Tramoni <sebastien@aperghis.net>'
 abstract: Mock Win32 modules
@@ -16,22 +16,9 @@ recommends:
   Data::GUID: 0
   File::HomeDir: 0
 provides:
-  Win32:
-    file: lib/Win32/Mock/Win32.pm
-    version: 0.01
-  Win32::Console:
-    file: lib/Win32/Mock/Win32/Console.pm
-  Win32::Daemon:
-    file: lib/Win32/Mock/Win32/Daemon.pm
-  Win32::EventLog:
-    file: lib/Win32/Mock/Win32/EventLog.pm
-    version: 0.01
   Win32::Mock:
     file: lib/Win32/Mock.pm
-    version: 0.01
-  Win32::Process:
-    file: lib/Win32/Mock/Win32/Process.pm
-    version: 0.01
+    version: 0.02
 generated_by: Module::Build version 0.2808
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html

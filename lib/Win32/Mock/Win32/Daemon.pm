@@ -1,4 +1,5 @@
-package Win32::Daemon;
+package # hide from PAUSE
+        Win32::Daemon;
 use strict;
 require Exporter;
 

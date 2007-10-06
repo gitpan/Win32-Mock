@@ -1,4 +1,5 @@
-package Win32::Process;
+package # hide from PAUSE
+        Win32::Process;
 use strict;
 
 {
