@@ -1,6 +1,7 @@
 package Win32::Mock;
-$VERSION = '0.02';
+$VERSION = '0.03';
 use strict;
+use warnings;
 use File::Basename;
 use File::Spec::Functions;
 use Devel::FakeOSName "Win32/\u$^O";
@@ -16,7 +17,7 @@ Win32::Mock - Mock Win32 modules
 
 =head1 VERSION
 
-Version 0.02
+Version 0.03
 
 =head1 SYNOPSIS
 
@@ -76,7 +77,7 @@ L<http://search.cpan.org/dist/Win32-Mock>
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2007 SE<eacute>bastien Aperghis-Tramoni, all rights reserved.
+Copyright 2007, 2008 SE<eacute>bastien Aperghis-Tramoni, all rights reserved.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.

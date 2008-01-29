@@ -1,6 +1,6 @@
 ---
 name: Win32-Mock
-version: 0.02
+version: 0.03
 author:
   - 'Sébastien Aperghis-Tramoni <sebastien@aperghis.net>'
 abstract: Mock Win32 modules
@@ -10,6 +10,9 @@ resources:
 requires:
   Devel::FakeOSName: 0
   ExtUtils::Command: 0
+  File::Basename: 0
+  File::Spec: 0.7
+  constant: 1.12
 build_requires:
   Test::More: 0
 recommends:
@@ -18,7 +21,7 @@ recommends:
 provides:
   Win32::Mock:
     file: lib/Win32/Mock.pm
-    version: 0.02
+    version: 0.03
 generated_by: Module::Build version 0.2808
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html

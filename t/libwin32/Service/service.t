@@ -1,4 +1,4 @@
-use Test::More skip_all => " *** NOT IMPLEMENTED";
+use Win32::Mock;
 use Win32::Service;
 
 $|=1;

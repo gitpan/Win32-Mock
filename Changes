@@ -1,5 +1,11 @@
 Revision history for Win32-Mock
 
+0.03    2008.01.30  (SAPER)
+        [CODE] Added mock modules for Win32::File, Win32::Service.
+        [CODE] All modules now use strict and warnings.
+        [DIST] Added an example.
+        [DIST] Updated prereqs.
+
 0.02    2007.10.06  (SAPER)
         [CODE] Fix a nit to make test suite pass under 5.005
         [DIST] Hide mocked Win32 modules from PAUSE indexer.

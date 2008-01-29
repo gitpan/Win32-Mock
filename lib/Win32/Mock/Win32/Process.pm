@@ -1,6 +1,7 @@
 package # hide from PAUSE
         Win32::Process;
 use strict;
+use warnings;
 
 {
     no strict;

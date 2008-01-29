@@ -1,19 +1,14 @@
 package # hide from PAUSE
         Win32::Daemon;
 use strict;
-require Exporter;
+use warnings;
+use Exporter ();
+use Win32::Service;
 
 {   no strict;
     @ISA = qw(Exporter);
-    @EXPORT = qw(SERVICE_STOPPED SERVICE_RUNNING SERVICE_PAUSED);
+    @EXPORT = qw();
 }
-
-
-use constant {
-    SERVICE_STOPPED     => 0, 
-    SERVICE_RUNNING     => 1,
-    SERVICE_PAUSED      => 2,
-};
 
 
 

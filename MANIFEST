@@ -4,12 +4,15 @@ Changes
 MANIFEST
 META.yml
 README
+eg/info.pl
 lib/Win32/Mock.pm
 lib/Win32/Mock/Win32.pm
 lib/Win32/Mock/Win32/Console.pm
 lib/Win32/Mock/Win32/Daemon.pm
-lib/Win32/Mock/Win32/Process.pm
 lib/Win32/Mock/Win32/EventLog.pm
+lib/Win32/Mock/Win32/File.pm
+lib/Win32/Mock/Win32/Process.pm
+lib/Win32/Mock/Win32/Service.pm
 lib/Win32/Mock/Win32CORE.pm
 t/pod-coverage.t
 t/pod.t

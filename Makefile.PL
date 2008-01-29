@@ -9,8 +9,18 @@ WriteMakefile(
     VERSION_FROM        => 'lib/Win32/Mock.pm',
     ABSTRACT_FROM       => 'lib/Win32/Mock.pm',
     PREREQ_PM => {
+        # prereqs
+        'constant'          => '1.12',
         'Devel::FakeOSName' => 0,
         'ExtUtils::Command' => 0,
+        'File::Basename'    => 0,
+        'File::Spec'        => '0.7',
+
+        # recommended
+        'Data::GUID'        => 0,
+        'File::HomeDir'     => 0,
+
+        # build/test prereqs
         'Test::More'        => 0,
     },
     PL_FILES            => {},

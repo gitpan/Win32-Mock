@@ -1,7 +1,11 @@
 package # hide from PAUSE
         Win32;
+use strict;
+use warnings;
 
 sub AUTOLOAD {
+    no strict "vars";
+
     # save the value of these variables
     my @save = (0+$!, 0+$^E);
 
@@ -48,7 +52,7 @@ SE<eacute>bastien Aperghis-Tramoni E<lt>sebastien@aperghis.netE<gt>
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2007 SE<eacute>bastien Aperghis-Tramoni, All Rights Reserved.
+Copyright 2007, 2008 SE<eacute>bastien Aperghis-Tramoni, All Rights Reserved.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.

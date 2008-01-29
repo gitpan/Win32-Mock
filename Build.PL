@@ -7,8 +7,11 @@ my $builder = Module::Build->new(
     dist_author         => 'Sébastien Aperghis-Tramoni <sebastien@aperghis.net>',
     dist_version_from   => 'lib/Win32/Mock.pm',
     requires => {
+        'constant'          => '1.12',
         'Devel::FakeOSName' => 0,
         'ExtUtils::Command' => 0,
+        'File::Basename'    => 0,
+        'File::Spec'        => '0.7',
     },
     recommends => {
         'Data::GUID'        => 0,
