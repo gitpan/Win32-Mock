@@ -79,7 +79,7 @@ my %main_eventlog = (
 # index of last read record
 my $last_read_record = 0;
 
-use XXX; END { YYY \%main_eventlog }
+#use XXX; END { YYY \%main_eventlog }
 
 
 # 

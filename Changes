@@ -1,5 +1,8 @@
 Revision history for Win32-Mock
 
+0.04    2008.01.30  (SAPER)
+        [CODE] Quick release to avoid loads of CPAN Testers FAIL reports.
+
 0.03    2008.01.30  (SAPER)
         [CODE] Added mock modules for Win32::File, Win32::Service.
         [CODE] All modules now use strict and warnings.

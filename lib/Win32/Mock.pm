@@ -1,5 +1,5 @@
 package Win32::Mock;
-$VERSION = '0.03';
+$VERSION = '0.04';
 use strict;
 use warnings;
 use File::Basename;
@@ -17,7 +17,7 @@ Win32::Mock - Mock Win32 modules
 
 =head1 VERSION
 
-Version 0.03
+Version 0.04
 
 =head1 SYNOPSIS
 
