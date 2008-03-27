@@ -1,11 +1,14 @@
 package Win32::Mock;
-$VERSION = '0.04';
 use strict;
 use warnings;
 use File::Basename;
-use File::Spec::Functions;
 use Devel::FakeOSName "Win32/\u$^O";
-use lib catdir(dirname($INC{"Win32/Mock.pm"}), "Mock");
+
+{
+    no strict "vars";
+    $VERSION = '0.05';
+    unshift @INC, dirname($INC{"Win32/Mock.pm"}) . "/Mock";
+}
 
 1
 
@@ -17,7 +20,7 @@ Win32::Mock - Mock Win32 modules
 
 =head1 VERSION
 
-Version 0.04
+Version 0.05
 
 =head1 SYNOPSIS
 
@@ -41,7 +44,7 @@ SE<eacute>bastien Aperghis-Tramoni, C<< <sebastien at aperghis.net> >>
 
 Please report any bugs or feature requests to
 C<bug-win32-mock at rt.cpan.org>, or through the web interface at
-L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Win32-Mock>.
+L<http://rt.cpan.org/Public/Dist/Display.html?Name=Win32-Mock>.
 I will be notified, and then you'll automatically be notified of progress on
 your bug as I make changes.
 
